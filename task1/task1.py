@@ -24,14 +24,9 @@ function dequeue(){
 function sortx(){
    global $stacknew;
    global $stackold;
-
    if(count($stackold) === 0){
        while(count($stacknew) > 0){
            array_push($stackold, array_pop($stacknew));
        }
    }
 }
-
-
-?>
-
