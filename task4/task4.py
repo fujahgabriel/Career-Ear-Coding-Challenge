@@ -3,6 +3,16 @@
 // Complete the arrayManipulation function below.
 function arrayManipulation($n, $queries) {
 
+    ksort($queries);
+
+    $total = 0;
+
+    foreach ($queries as $value) {
+        $total += $value;
+        $n = max($n, $total);
+    }
+
+    return $n;
 
 }
 
